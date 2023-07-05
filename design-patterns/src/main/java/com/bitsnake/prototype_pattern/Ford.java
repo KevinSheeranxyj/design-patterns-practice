@@ -2,8 +2,11 @@ package com.bitsnake.prototype_pattern;
 
 public class Ford extends BasicCar {
 
-    public int basicPrice = 100000;
+    public int basePrice = 200000;
 
+    public Ford(String m) {
+        modelName = m;
+    }
 
     @Override
     public BasicCar clone() {

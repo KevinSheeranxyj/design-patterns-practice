@@ -2,10 +2,10 @@ package com.bitsnake.prototype_pattern;
 
 import java.util.Random;
 
-public class BasicCar implements Cloneable{
+public class BasicCar implements Cloneable {
 
     public String modelName;
-    public int basicPrice, onRoadPrice;
+    public int basePrice, onRoadPrice;
 
     public static int setAdditionalPrice() {
         int price = 0;
@@ -13,6 +13,14 @@ public class BasicCar implements Cloneable{
         int p = r.nextInt(100000);
         price = p;
         return price;
+    }
+
+    public int getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(int basePrice) {
+        this.basePrice = basePrice;
     }
 
     public String getModelName() {

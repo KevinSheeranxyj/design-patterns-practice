@@ -2,21 +2,12 @@ package com.bitsnake.prototype_pattern;
 
 public class Nano extends BasicCar {
 
-    public int basicPrice;
+    public int basePrice = 10000;
 
-    public String modelName;
-
-    public Nano(String modelName) {
-        this.modelName = modelName;
+    public Nano(String m) {
+        modelName = m;
     }
 
-    public int getBasicPrice() {
-        return basicPrice;
-    }
-
-    public void setBasicPrice(int basicPrice) {
-        this.basicPrice = basicPrice;
-    }
 
     @Override
     public BasicCar clone() {

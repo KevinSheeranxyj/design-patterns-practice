@@ -6,10 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-performance-practice" />
         <module name="head-first-java" />
+        <module name="java-free-style" />
+        <module name="java-performance-practice" />
+        <module name="java-oop" />
         <module name="design-patterns" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-object-oriented-programming" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
